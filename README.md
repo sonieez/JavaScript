@@ -25,7 +25,7 @@ But backtick symbol has some features:
   </li>
 </ul>
 
-•When we add a string and integer together, it doesn't give an error. It recognises integer as string and combines them as <i>string</i>:
+•Concatenation(adding strings together). But when we add a string and integer together, it doesn't give an error. It recognises integer as string and combines them as <i>string</i>:
 ```javascript
 'apple' + 3;  => 'apple3'
 3 + 'apple';  => '3apple'
