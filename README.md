@@ -92,3 +92,13 @@ Variable name restrictions:
   <li>Can't start with a number (Example: 2name)</li>
   <li>Can't use special characters (except $ and _ ) and space (Example: my name/ name@#)</li>
 </ol>
+<hr>
+
+📍Naming Conventions:
+<ul>
+  <li>camelCase = myName (most used in JavaScript)</li> 
+  <li>PascalCase = MyName</li>
+  <li>kebab-case = my-name (used in HTML and CSS and file names</li>
+  <li>snake_case = my_name (used in other languages)</li>
+</ul>
+<hr>
