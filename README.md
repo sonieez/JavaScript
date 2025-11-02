@@ -81,3 +81,14 @@ console.log('hello');
 ```
 <hr>
 
+📍To create a variable:
+```javascript
+let variable = 2;
+let message = 'hello';
+```
+Variable name restrictions:
+<ol>
+  <li>Can't use special words (Example: let)</li>
+  <li>Can't start with a number (Example: 2name)</li>
+  <li>Can't use special characters (except $ and _ ) and space (Example: my name/ name@#)</li>
+</ol>
