@@ -28,14 +28,14 @@ But backtick symbol has some features:
 📍Concatenation(adding strings together):
 
 ```javascript
-'some' + 'text'; => 'sometext'
+'some' + 'text'; ==> 'sometext'
 //'+' combines them without a space
 ```
 
 But when we add a string and integer together, it doesn't give an error. It recognises integer as string and combines them as <i>string</i>:
 ```javascript
-'apple' + 3;  => 'apple3'
-3 + 'apple';  => '3apple'
+'apple' + 3;  ==> 'apple3'
+3 + 'apple';  ==> '3apple'
 ```
 
 <hr>
@@ -85,7 +85,8 @@ console.log('hello');
 ```javascript
 let variable = 2;
 let message = 'hello';
-//Later we can change its value 
+//Later we can change its value
+variable = 3;
 ```
 
 ```javascript
@@ -100,7 +101,7 @@ But we can see it in older javascript codes.*/
 ```
 ✔️Use `const` by default.
 
-✔️Use `let` if you have to change a virable later
+✔️Use `let` if you have to change a variable later.
 
 <hr>
 Variable name restrictions:
@@ -119,3 +120,9 @@ Variable name restrictions:
   <li>snake_case = my_name (used in other languages)</li>
 </ul>
 <hr>
+
+📍To get the type of variable/symbol:
+```javascript
+typeof 3; //number
+typeof 'hello'; //string
+```
