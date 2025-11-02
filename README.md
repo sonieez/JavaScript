@@ -90,14 +90,19 @@ let message = 'hello';
 
 ```javascript
 const variable = 3;
-//We can't change its value, it is constant.
+//We can't change its value, it is constant. 
 ```
 
 ```javascript
 var variable = 3;
-//In new javascript codes var is not used. But we can see them in older javascript codes.
+/*In new javascript codes var is not used.
+But we can see it in older javascript codes.*/
 ```
+✔️Use `const` by default.
 
+✔️Use `let` if you have to change a virable later
+
+<hr>
 Variable name restrictions:
 <ol>
   <li>Can't use special words (Example: let)</li>
