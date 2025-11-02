@@ -1,7 +1,7 @@
 <h2>Hi there!</h2>
 This repo includes my journey of learning JavaScript.
 <hr>
-•There are three ways to create a string:
+📍There are three ways to create a string:
 <ol>
   <li>
     single quotes(' ')
@@ -24,13 +24,22 @@ But backtick symbol has some features:
     <i>Interpolation</i> (like format string in python) - for adding variable:  ${ } 
   </li>
 </ul>
+<hr>
+📍Concatenation(adding strings together):
 
-•Concatenation(adding strings together). But when we add a string and integer together, it doesn't give an error. It recognises integer as string and combines them as <i>string</i>:
+```javascript
+'some' + 'text'; => 'sometext'
+//'+' combines them without a space
+```
+
+But when we add a string and integer together, it doesn't give an error. It recognises integer as string and combines them as <i>string</i>:
 ```javascript
 'apple' + 3;  => 'apple3'
 3 + 'apple';  => '3apple'
 ```
-•Escape characters:
+
+<hr>
+📍Escape characters:
 <ul>
   <li>
     \'  - for using single quotes inside single quote string
@@ -39,4 +48,36 @@ But backtick symbol has some features:
     \n  - for adding new line
   </li>
 </ul>
+<hr>
+
+📍To create a popup in the website:
+```javascript
+alert('This is a popup');
+```
+<hr>
+📍For loading JavaScript inside an HTML file: 
+
+```html
+<script>
+  alert('hello');
+</script>
+```
+<hr>
+📍Comment:
+
+```javascript
+//This is a comment.
+
+/*This is a
+  multi-line
+  comment.
+*/
+```
+<hr>
+
+📍To write commands for console in the website:
+```javascript
+console.log('hello');
+```
+<hr>
 
