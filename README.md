@@ -85,7 +85,19 @@ console.log('hello');
 ```javascript
 let variable = 2;
 let message = 'hello';
+//Later we can change its value 
 ```
+
+```javascript
+const variable = 3;
+//We can't change its value, it is constant.
+```
+
+```javascript
+var variable = 3;
+//In new javascript codes var is not used. But we can see them in older javascript codes.
+```
+
 Variable name restrictions:
 <ol>
   <li>Can't use special words (Example: let)</li>
