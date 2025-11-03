@@ -126,3 +126,20 @@ Variable name restrictions:
 typeof 3; //number
 typeof 'hello'; //string
 ```
+<hr>
+📍Booleans:
+✔️A boolean value represents if something true or false
+
+<hr>
+📍Comparison operators:
+<ul>
+  <li> > greater than</li>
+  <li> < less than </li>
+  <li> >= greater than or equal to</li>
+  <li> <= less than or equal to</li>
+  <li> === equal to</li>
+  <li> == equal to (but it converts them to same type to check)</li>
+  <li> !=== not equal to</li>
+</ul>
+✔️Use === instead of ==
+<hr>
