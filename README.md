@@ -127,9 +127,7 @@ typeof 3; //number
 typeof 'hello'; //string
 ```
 <hr>
-📍Booleans:
-✔️A boolean value represents if something true or false
-
+📍Booleans: A boolean value represents if something <b><i>true</i></b> or <b><i>false</i></b>
 <hr>
 📍Comparison operators:
 <ul>
@@ -143,3 +141,12 @@ typeof 'hello'; //string
 </ul>
 ✔️Use === instead of ==
 <hr>
+
+📍If-else statements:
+```javascript
+if (/*condition*/) {
+  /*code*/
+} else{
+  /*code*/
+}
+```
