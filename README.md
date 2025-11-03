@@ -128,6 +128,16 @@ typeof 'hello'; //string
 ```
 <hr>
 📍Booleans: A boolean value represents if something <b><i>true</i></b> or <b><i>false</i></b>
+✔️Falsy values(behaves like false) :
+<ul>
+  <li>false</li>
+  <li>0</li>
+  <li>'' (empty string)</li>
+  <li>NaN (Not a Number)</li>
+  <li>undefined (something doesn't have a value)</li>
+  <li>null</li>
+</ul>
+✔️Other values are truthy values(behaves like truth)
 <hr>
 📍Comparison operators:
 <ul>
@@ -142,7 +152,7 @@ typeof 'hello'; //string
 ✔️Use === instead of ==
 <hr>
 
-📍If-else statements:
+📍If statements:
 ```javascript
 if (/*condition*/) {
   /*code*/
@@ -152,3 +162,22 @@ if (/*condition*/) {
   /*code*/
 }
 ```
+✔️Any variable we create inside {...} will only exist inside the {...}. Because, inside the {} there is a scope. 
+
+✔️Shortcuts for If statements:
+<ul>
+  <li>Ternary Operator ?:</li>
+  <li>Guard Operator &&</li>
+  <li>Default Operator ||</li>
+</ul>
+<hr>
+📍Math.random(): Generates random number between 0 and 1
+
+<hr>
+📍Logical Operations:
+<ul>
+  <li> and --> &&</li>
+  <li> or  --> || </li>
+  <li> not  --> ! </li>  
+</ul>
+<hr>
