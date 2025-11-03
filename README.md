@@ -146,6 +146,8 @@ typeof 'hello'; //string
 ```javascript
 if (/*condition*/) {
   /*code*/
+} else if{
+  /*code*/
 } else{
   /*code*/
 }
