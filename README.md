@@ -195,3 +195,14 @@ if (/*condition*/) {
 
 <hr>
 
+📍Functions:
+
+✔️A function lets us reuse the code
+To create a function:
+```javascript
+function functionName() {
+  /*code*/
+}
+//To execute the code we need to call the function
+functionName();
+```
