@@ -198,6 +198,7 @@ if (/*condition*/) {
 📍Functions:
 
 ✔️A function lets us reuse the code
+
 To create a function:
 ```javascript
 function functionName() {
@@ -233,3 +234,5 @@ functionName(/*value*/);
 //Our value is put into function as parameter.
 ```
 ✔️Parameter puts a value into the function.
+
+✔️Value written inside called function is also called argument.
