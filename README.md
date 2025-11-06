@@ -236,3 +236,29 @@ functionName(/*value*/);
 ✔️Parameter puts a value into the function.
 
 ✔️Value written inside called function is also called argument.
+<hr>
+
+📍Objects
+
+✔️An object groups multiple values together. That means our values can be any type(string, number, boolean etc).
+
+Creating objects:
+```javascript
+const objectName = {
+  property1: 'value1',
+  property2: value2
+};
+
+//We can access value:
+objectName.property1     /*this gives us value1*/
+objectName.property2     /*this gives us value2*/
+
+//We can also change the value of property:
+objectName.property1 = valueN   /*value of property1 will change to valueN
+
+//We can add new property:
+objectName.newProperty = value3;
+
+//We can also deleter a property:
+delete objectName.property;
+```
