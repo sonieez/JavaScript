@@ -266,3 +266,35 @@ objectName.newProperty = value3;
 //We can also delete a property:
 delete objectName.property;
 ```
+✔️We use dot notation by default.
+✔️We use bracket notation when dot notation doesn't work. For example:
+```javascript
+product.delivery-time  //we can't use dash sign with dot notation
+product['delivery-time']
+
+//Also we can a variable and calculation in bracket notation:
+object['variable1']
+object['value1' + 'value2']
+```
+✔️We can write object inside of an object. It is called nested object:
+```javascript
+const object1 = {
+  property1: 'value1',
+  property2: 'value2',
+  object2: {
+    property3: value3,
+    property4: value4
+  }
+};
+```
+✔️We can write function inside of an object. Because, a function is another type of value.
+```javascript
+const objectName = {
+  property1: function function1Name() {
+    /*code*/
+  }
+}
+
+objectName.property1();
+```
+✔️Function saved inside an object is called Method (Math.random/console.log)
