@@ -250,15 +250,19 @@ const objectName = {
 };
 
 //We can access value:
+//1)Dot notation:
 objectName.property1     /*this gives us value1*/
 objectName.property2     /*this gives us value2*/
 
-//We can also change the value of property:
-objectName.property1 = valueN   /*value of property1 will change to valueN
+//2)Bracket notation: (does the same thing with dot notation)
+objectName['property'];
 
-//We can add new property:
+//We can also change the value of property:
+objectName.property1 = valueN   /*value of property1 will change to valueN*/
+
+//We can add a new property:
 objectName.newProperty = value3;
 
-//We can also deleter a property:
+//We can also delete a property:
 delete objectName.property;
 ```
