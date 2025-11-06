@@ -267,6 +267,7 @@ objectName.newProperty = value3;
 delete objectName.property;
 ```
 ✔️We use dot notation by default.
+
 ✔️We use bracket notation when dot notation doesn't work. For example:
 ```javascript
 product.delivery-time  //we can't use dash sign with dot notation
