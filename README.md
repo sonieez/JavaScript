@@ -299,3 +299,31 @@ const objectName = {
 objectName.property1();
 ```
 ✔️Function saved inside an object is called Method (Math.random/console.log)
+
+✔️Built-in Objects - provided by the language
+<hr>
+
+📍JSON (JavaScript Object Notaion):
+
+✔️JSON doesn't support single quotes and functions. Must use double quotes!!
+
+✔️JSON is more universal. We use it when we atore and send data between computers.
+```javascript
+const jsonString = JSON.stringify(objectName);
+//converts the object into JSON string
+
+JSON.parse(jsonString);
+//converts JSON string to object
+```
+
+📍localStorage:
+
+✔️Save values more permanently. Since variables are temporary, when we refresh/close the page, all variables are deleted. That's why we use localStorage
+```javascript
+localStorage.setItem(/*name*/, /*value*/);
+//saving string into localStorage
+
+localStorage.getItem(/*name*/);
+//gets the value out of localStorage
+```
+✔️localStorage only supports strings
