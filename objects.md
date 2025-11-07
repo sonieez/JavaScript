@@ -85,5 +85,10 @@ localStorage.setItem(/*name*/, /*value*/);
 
 localStorage.getItem(/*name*/);
 //gets the value out of localStorage
+
+localStorage.removeItem(/*name*/);
+//removes string from storage
 ```
 ✔️localStorage only supports strings
+
+✔️When something doesn't eixst in localStorage, it will give us `null` 
