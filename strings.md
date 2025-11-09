@@ -45,3 +45,12 @@ But when we add a string and integer together, it doesn't give an error. It reco
     \n  - for adding new line
   </li>
 </ul>
+<hr>
+
+📍Auto-Boxing:
+
+Javascript automatically wraps strings and other types into a box like an object. That's why strings also have methods and properties:
+```javascript
+'hello'.length          //property
+'hello'.toUpperCase()   //method
+```
