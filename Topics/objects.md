@@ -75,6 +75,7 @@ const jsonString = JSON.stringify(objectName);
 JSON.parse(jsonString);
 //converts JSON string to object
 ```
+<hr>
 
 📍localStorage:
 
@@ -91,4 +92,49 @@ localStorage.removeItem(/*name*/);
 ```
 ✔️localStorage only supports strings
 
-✔️When something doesn't eixst in localStorage, it will give us `null` 
+✔️When something doesn't exist in localStorage, it will give us `null` 
+<hr>
+
+📍Shortcuts:
+
+✔️Destructuring:
+```javascript
+const object4 = {
+  message: 'good job',
+  price: 799
+};
+
+const message = object4.message;    //code
+const price = object4.price;        //code
+const { message, price } = object4;    //shortcut for the code
+
+console.log(message, price);    //good job 799
+```
+
+✔️Shorthand property: (same named property and variable)
+```javascript
+const message = 'hello';
+
+const object5 = {
+  message: message  //code
+  message           //shortcut for the code
+};
+
+console.log(object5);   //{message: 'hello'} 
+```
+
+✔️Shorthand method:
+```javascript
+const object6 = {
+  method: function function1() {
+    console.log('method');
+  }   //code
+
+  method() {
+    console.log('method')
+  }  //shortcut for the code
+}
+
+object6.method();   //method
+
+```
