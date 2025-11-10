@@ -2,16 +2,6 @@
 This repo includes my journey of learning JavaScript.
 
 <hr>
-📍Escape characters:
-<ul>
-  <li>
-    \'  - for using single quotes inside single quote string
-  </li>
-  <li>
-    \n  - for adding new line
-  </li>
-</ul>
-<hr>
 
 📍To create a popup in the website:
 ```javascript
