@@ -43,3 +43,9 @@ Variable name restrictions:
 typeof 3; //number
 typeof 'hello'; //string
 ```
+<hr>
+📍Convert type of variables:
+
+```javascript
+const variable1 = Number(variable2);   //converts a variable into number
+```
