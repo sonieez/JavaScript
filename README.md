@@ -15,6 +15,11 @@ alert('This is a popup');
   alert('hello');
 </script>
 ```
+
+```html
+<button onclick=" <!--code--> "></button>  
+<input onkeydown=" <!--code--> ">
+```
 <hr>
 📍Comment:
 
@@ -70,4 +75,3 @@ console.log('hello');
 📍Math.random(): Generates random number between 0 and 1
 
 <hr>
-
