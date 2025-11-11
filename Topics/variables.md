@@ -47,5 +47,6 @@ typeof 'hello'; //string
 📍Convert type of variables:
 
 ```javascript
-const variable1 = Number(variable2);   //converts a variable into number
+Number(variable);   //converts the variable into number
+String(variable);   //converts the variable into string
 ```
