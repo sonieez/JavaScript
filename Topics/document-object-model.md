@@ -5,7 +5,7 @@
 ✔️The `document` object represents/models the webpage.
 
 ✔️DOM combines JavaScript and HTML together and gives Javascript the control.
-
+<hr>
 Properties:
 
 1) Title
@@ -26,4 +26,16 @@ document.body.innerHTML  //controls all the html inside the body
 We can change all the code in the body with it:
 ```javascript
 document.body.innerHTML = '/*code*/';
+```
+<hr>
+Methods:
+
+1) querySelector()
+
+```javascript
+document.querySelector()
+//lets us get any element from the page and put it inside Javascript:
+
+document.querySelector('button');  /*gets the first button element*/
+
 ```
