@@ -24,6 +24,8 @@ document.body  //it gives us the body (html code) of the webpage
 document.body.innerHTML  //controls all the html inside the body
 
 document.body.innerText  //controls the text of an element
+
+document.body.value  
 ```
 We can change all the code in the body with innerHTML:
 ```javascript
