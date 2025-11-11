@@ -27,6 +27,7 @@ We can change all the code in the body with it:
 ```javascript
 document.body.innerHTML = '/*code*/';
 ```
+*Every html element has .innerHTML
 <hr>
 Methods:
 
@@ -38,4 +39,10 @@ document.querySelector()
 
 document.querySelector('button');  /*gets the first button element*/
 
+```
+We can select exact element by using class attribute:
+```javascript
+<button class="button1">Hello</button>
+
+document.querySelector('.button1');
 ```
