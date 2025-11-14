@@ -75,3 +75,9 @@ console.log('hello');
 📍Math.random(): Generates random number between 0 and 1
 
 <hr>
+
+📍Html inside Javascript:
+
+```javascript
+const html = `<p>${variable}</p>`;
+```
