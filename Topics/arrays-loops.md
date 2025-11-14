@@ -27,3 +27,13 @@ myArray.length   //count of values
 myArray.push(/*value*/)  //adds a value to the end
 myArray.splice(/*index*/,/*number of values*/)    //removes a value(s)
 ```
+<hr>
+
+📍Loops
+
+✔️While:
+```javascript
+while (/*condition*/) {
+  /*code*/
+}
+```
