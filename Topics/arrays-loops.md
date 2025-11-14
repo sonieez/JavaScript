@@ -31,9 +31,42 @@ myArray.splice(/*index*/,/*number of values*/)    //removes a value(s)
 
 📍Loops
 
-✔️While:
+✔️While loop:
 ```javascript
+/*loop variable*/
+
 while (/*condition*/) {
+  /*code*/
+  /*increment step*/;    
+}
+
+//For example:
+
+let randomNumber = 0;
+while (randomNumber < 0.5) {
+  random.Number = Math.random()
+}
+```
+
+✔️For loop:
+``` javascript
+for (/*loop variable*/; /*condition*/; /*increment step*/) {
+  /*code*/
+}
+
+//For example:
+for (let i = 1; i <= 5; i++) {
   /*code*/
 }
 ```
+
+Looping through an array:
+```javascript
+const myArray = ['first', 'second', 'third'];
+
+for (let index = 0; index < myArray.length; index ++) {
+  /*code*/
+}
+```
+
+Accumulator Pattern:
