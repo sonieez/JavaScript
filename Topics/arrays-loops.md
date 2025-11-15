@@ -26,6 +26,14 @@ myArray.length   //count of values
 
 myArray.push(/*value*/)  //adds a value to the end
 myArray.splice(/*index*/,/*number of values*/)    //removes a value(s)
+
+const array2 = array1.slice()  //makes a copy of an array
+```
+
+Shortcut:
+```javascript
+const [firstValue, secondValue] = [1, 2];
+//firstValue = 1, secondValue = 2
 ```
 <hr>
 
@@ -67,4 +75,10 @@ const myArray = ['first', 'second', 'third'];
 for (let index = 0; index < myArray.length; index ++) {
   /*code*/
 }
+```
+Features:
+
+```javascript
+break   //exit a loop early
+continue  //skip an iteration
 ```
