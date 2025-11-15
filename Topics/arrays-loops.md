@@ -82,3 +82,15 @@ Features:
 break   //exit a loop early
 continue  //skip an iteration
 ```
+*In `while` loop when using `continue`, must do increment step(i++) manually:
+```javascript
+let i = 0;
+while (/*condition*/) {
+  if (/*condition*/) {
+    i++;   //increment step
+    continue;
+  }
+  /*code*/
+  i++;
+}
+```
