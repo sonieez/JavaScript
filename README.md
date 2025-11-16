@@ -96,3 +96,10 @@ setTimeout(/*function*/, /*time in milliseconds*/);
 ```javascript
 setInterval(/*function*/, /*time in milliseconds*/);
 ```
+✔️There is an ID that setInterval() returns. We can stop setInterval() with it:
+```javascript
+const intervalID = setInterval(...);
+
+//To stop the setInterval:
+clearInterval(intervalID);
+```
