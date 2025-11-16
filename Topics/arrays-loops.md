@@ -30,6 +30,17 @@ myArray.splice(/*index*/,/*number of values*/)    //removes a value(s)
 const array2 = array1.slice()  //makes a copy of an array
 ```
 
+✔️Loop through an array:
+```javascript
+myArray.forEach(/*function*/);
+
+//For example:
+[firstValue,secondValue].forEach(function(value, index) {       
+  /*code*/
+});
+//It's going to save each element of the array in value parameter. Each element's index is saved in index parameter.
+```
+
 Shortcut:
 ```javascript
 const [firstValue, secondValue] = [1, 2];
