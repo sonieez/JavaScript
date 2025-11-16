@@ -81,3 +81,18 @@ console.log('hello');
 ```javascript
 const html = `<p>${variable}</p>`;
 ```
+<hr>
+📍setTimeout():
+
+✔️Allows us to run a function in the future.
+
+```javascript
+setTimeout(/*function*/, /*time in milliseconds*/);
+```
+<hr>
+📍setInterval():
+
+✔️Keeps running the code with an interval
+```javascript
+setInterval(/*function*/, /*time in milliseconds*/);
+```
