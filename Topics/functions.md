@@ -39,3 +39,10 @@ functionName(/*value*/);
 ✔️Parameter puts a value into the function.
 
 ✔️Value written inside called function is also called argument.
+
+✔️Functions are also values. We can store it in a variable:
+```javascript
+cosnt function1 = function name() {
+  /*code*/
+};
+```
