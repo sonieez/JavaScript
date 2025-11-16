@@ -17,7 +17,7 @@ myArray[1] = 15;       //[10, 15, 30]
 ```
 Array can include any type:
 ```javascript
-[1, 'hello', true, {name: 'Sona'}, [1,2]
+[1, 'hello', true, {name: 'Sona'}, [1,2]]
 //number. string, boolean, object, array
 ```
 ✔️Property and Methods:
