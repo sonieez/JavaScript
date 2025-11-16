@@ -45,4 +45,9 @@ functionName(/*value*/);
 cosnt function1 = function name() {
   /*code*/
 };
+
+//Anonymous function(without name):
+const function1 = function() {
+  /*code*/
+};
 ```
