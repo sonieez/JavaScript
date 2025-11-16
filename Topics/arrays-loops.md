@@ -35,10 +35,9 @@ const array2 = array1.slice()  //makes a copy of an array
 myArray.forEach(/*function*/);
 
 //For example:
-[firstValue,secondValue].forEach(function(value, index) {       
+[firstValue,secondValue].forEach(function(/*value*/, /*index*/) {       
   /*code*/
 });
-//It's going to save each element of the array in value parameter. Each element's index is saved in index parameter.
 ```
 
 Shortcut:
