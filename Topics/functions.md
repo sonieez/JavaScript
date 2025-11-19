@@ -51,3 +51,37 @@ const function1 = function() {
   /*code*/
 };
 ```
+<hr>
+📍Arrow Functions:
+
+✔️Arrow functions almost do the same thing as regular functions.
+
+```javascript
+const arrowFunction = () => {
+  /*code*/
+};
+```
+✔️Differences: 
+
+Arrow functions have shortcuts:
+
+```javascript
+const oneParam = (param) => {
+  console.log(param);
+};
+
+//You can write it without parameter(if it has one parameter):
+
+const oneParam = () => {
+  console.log(param);
+};
+```
+```javascript
+const oneLine = () => {
+  return 2 + 3;
+};
+
+//You can write it all in one line:
+
+const oneLine = () =>  2 + 3; 
+```
