@@ -52,3 +52,22 @@ We can select exact element by using class attribute:
 
 document.querySelector('.button1');
 ```
+2) addEventListener()
+```javascript
+element.addEventListener(/*event*/, /*function*/);
+
+//For example:
+buttonELement.addEventListener('click', () => {
+  console.log('click');
+});
+```
+✔️Every html element has .addEventListener
+
+✔️Does the same thing as the `onclick` attribute.
+
+✔️We can add multiple listeners to one event.
+
+✔️We can remove a listener:
+```javascript
+element.removeEventListener(/*event*/, /*function*/);
+```
