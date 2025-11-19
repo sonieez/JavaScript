@@ -21,13 +21,42 @@ Array can include any type:
 //number. string, boolean, object, array
 ```
 ✔️Property and Methods:
+
+Length of an array: 
 ```javascript
 myArray.length   //count of values
-
+```
+Adding and removing value from an array:
+```javascript
 myArray.push(/*value*/)  //adds a value to the end
 myArray.splice(/*index*/,/*number of values*/)    //removes a value(s)
+```
+Making copy of an array:
+```javascript
+const array2 = array1.slice()  
+```
+Filtering an array:
+```javascript
+myArray.filter(/*function*/);
+//Creats a new array[]
+//return true --> put value in array
+//return false --> not put value in array
 
-const array2 = array1.slice()  //makes a copy of an array
+//For example:
+[1, -3, 5].filter((value, index) => {
+  return value >= 0;       //[1, 5]
+});  
+```
+Transforming an array:
+```javascript
+myArray.map(/*function*/);
+//Creates a new array[]
+//Whatever we return --> add to new array
+
+//For example:
+[1, 1, 3].map((value, index) => {
+  return value * 2;    //[2, 2, 6]
+});
 ```
 
 ✔️Loop through an array:
