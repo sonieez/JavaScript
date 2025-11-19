@@ -52,6 +52,11 @@ We can select exact element by using class attribute:
 
 document.querySelector('.button1');
 ```
+We can get all elements of the same class:
+```javascript
+document.querySelectorAll(/*class*/);
+```
+
 2) addEventListener()
 ```javascript
 element.addEventListener(/*event*/, /*function*/);
