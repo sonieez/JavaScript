@@ -60,7 +60,7 @@ console.log('hello');
   <li> <= less than or equal to</li>
   <li> === equal to</li>
   <li> == equal to (but it converts them to same type to check)</li>
-  <li> !=== not equal to</li>
+  <li> !== not equal to</li>
 </ul>
 ✔️Use === instead of ==
 <hr>
