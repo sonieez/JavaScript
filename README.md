@@ -113,5 +113,11 @@ clearInterval(intervalID);
 ✔️starts with `data-`:
 
 ```html
-<button data-name=" <!--information--> "> </button>
+<button data-product-name=" <!--information--> "> </button>
+```
+✔️To get the data --> `dataset`:
+
+```javascript
+button.dataset.productName
+//product-name --> productName
 ```
