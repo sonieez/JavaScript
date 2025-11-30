@@ -109,3 +109,9 @@ clearInterval(intervalID);
 ✔️HTML attribute
 
 ✔️allows us to attach any information to an element
+
+✔️starts with `data-`:
+
+```html
+<button data-name=" <!--information--> "> </button>
+```
