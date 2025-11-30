@@ -103,3 +103,9 @@ const intervalID = setInterval(...);
 //To stop the setInterval:
 clearInterval(intervalID);
 ```
+<hr>
+📍Data Attribute:
+
+✔️HTML attribute
+
+✔️allows us to attach any information to an element
