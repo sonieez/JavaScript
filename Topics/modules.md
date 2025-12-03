@@ -28,3 +28,11 @@ import {variableName} from /*file path*/;
 ```javascript
 import {variableName as myVariable} from /*file path*/;
 ```
+✔️Importing everything:
+```javascript
+import * as moduleName from /*file path*/;
+
+//For accessing:
+moduleName.variableName      //getting a variable
+moduleName.functionName();   //getting a function
+```
