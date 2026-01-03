@@ -121,3 +121,20 @@ clearInterval(intervalID);
 button.dataset.productName
 //product-name --> productName
 ```
+<hr>
+
+📍Radio selector:
+```html
+<input type="radio" name="name1">
+```
+❗If there are two or more radio selectors and their name are the same --> you can select only one. If they have different names you can select multiple:
+```html
+<input type="radio" name="name1">
+<input type="radio" name="name1">
+<!-- You can select only one-->
+
+<input type="radio" name="name1">
+<input type="radio" name="name2">
+<input type="radio" name="name3">
+<!-- You can select how many you want-->
+```
