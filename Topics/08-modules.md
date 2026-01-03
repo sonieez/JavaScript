@@ -24,6 +24,10 @@ import {variableName} from /*file path*/;
 ```javascript
 '../otherFolder/file/'
 ```
+*When getting a file out of the folder located in the current folder:
+```javascript
+'./folderName/file/'
+```
 ✔️For avoiding name conflicts:
 ```javascript
 import {variableName as myVariable} from /*file path*/;
