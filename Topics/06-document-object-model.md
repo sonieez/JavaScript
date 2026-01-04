@@ -66,6 +66,11 @@ buttonELement.addEventListener('click', () => {
   console.log('click');
 });
 ```
+3) Removing element:
+```javascript
+const button = document.querySelector('.button');
+button.remove()
+```
 ✔️Every html element has .addEventListener
 
 ✔️Does the same thing as the `onclick` attribute.
