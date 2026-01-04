@@ -127,7 +127,7 @@ button.dataset.productName
 ```html
 <input type="radio" name="name1">
 ```
-❗If there are two or more radio selectors and their name are the same --> you can select only one. If they have different names you can select multiple:
+❗If there are two or more radio selectors and their name are the same --> you can select only one. If they have different names --> you can select multiple:
 ```html
 <input type="radio" name="name1">
 <input type="radio" name="name1">
