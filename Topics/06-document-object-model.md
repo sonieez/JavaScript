@@ -60,10 +60,19 @@ document.querySelectorAll(/*class*/);
 2) addEventListener()
 ```javascript
 element.addEventListener(/*event*/, /*function*/);
-
-//For example:
+```
+✔️'click' event:
+```javascript
 buttonELement.addEventListener('click', () => {
   console.log('click');
+});
+```
+✔️'keydown' event:
+```javascript
+inputElement.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    console.log('Enter');
+  }
 });
 ```
 3) Removing element:
