@@ -14,3 +14,12 @@
   <li>Save time</li>
   <li>Avoid duplicating work</li>
 </ul>
+
+✔️Example:
+ 
+ Day.js - date library:
+ ```javascript
+const today = dayjs();  //for today's date
+const addDays = today.add(/*number*/, 'days');  //adding to today's date
+addDays.format('dddd, MMMM D');   //Formating date --> Saturday, January 17
+```
