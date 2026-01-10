@@ -14,6 +14,7 @@
   <li>Save time</li>
   <li>Avoid duplicating work</li>
 </ul>
+<hr>
 
 ✔️Example:
  
@@ -22,4 +23,28 @@
 const today = dayjs();  //for today's date
 const addDays = today.add(/*number*/, 'days');  //adding to today's date
 addDays.format('dddd, MMMM D');   //Formating date --> Saturday, January 17
+```
+<hr>
+
+📍ESM version(EcmaScript Module):
+
+A version that works with JavaScript Modules.
+```javascript
+import dayjs from '/*url*/';
+//or
+import {...} from '/*url*/';
+```
+✔️Default export:
+```javascript
+export default functionName;
+
+import functionName from '..';
+```
+*Each file can only have one default export.
+
+✔️Named export:
+```javascript
+export functionName;
+
+import {functionName} from '...';
 ```
