@@ -11,7 +11,7 @@ alert('This is a popup');
 📍For loading JavaScript inside an HTML file: 
 
 ```html
-<script>
+<script> 
   alert('hello');
 </script>
 ```
