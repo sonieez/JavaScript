@@ -139,3 +139,18 @@ button.dataset.productName
 <input type="radio" name="name3">
 <!-- You can select how many you want-->
 ```
+<hr>
+
+📍MVC (Model - View - Controller):
+
+Split our code into 3 parts:
+
+1️⃣Model = saves and manages the data
+
+2️⃣View = takes the data and displays it on the page
+
+3️⃣Controller = runs some code when we interact with the page
+
+✔️MVC makes sure the page always matches the data.
+
+✔️MVC is a design pattern.
