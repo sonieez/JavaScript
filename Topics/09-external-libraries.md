@@ -23,6 +23,8 @@
 const today = dayjs();  //for today's date
 const addDays = today.add(/*number*/, 'days');  //adding to today's date
 addDays.format('dddd, MMMM D');   //Formating date --> Saturday, January 17
+
+const subtractDays = today.subtract(/*number*/, 'days'));  //subtracting from today's date
 ```
 <hr>
 
