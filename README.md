@@ -170,3 +170,5 @@ Split our code into 3 parts:
 
   Test with values that are tricky
 </ol>
+
+✔️Group of related tests = test suite
