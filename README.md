@@ -156,21 +156,3 @@ Split our code into 3 parts:
 ✔️MVC is a design pattern.
 
 <hr>
-
-📍Automated testing = using code to test code
-
-✔️Situation = test case
-
-✔️Types of test cases:
-<ol>
-  <li>Basic Test Cases</li>
-
-  Only test if the code is working
-  <li>Edge Cases</li>
-
-  Test with values that are tricky
-</ol>
-
-✔️Group of related tests = test suite
-
-<hr>
