@@ -172,3 +172,5 @@ Split our code into 3 parts:
 </ol>
 
 ✔️Group of related tests = test suite
+
+<hr>
