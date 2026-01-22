@@ -67,8 +67,18 @@ Lets us replace a method with a fake version:
 spyOn(/*object we want to mock*/, /*method we want to mock*/);
 
 //Property and methods:
-spyOn(/*object*/, *method*/).and.callFake(/*function*/);
+spyOn(/*object*/, /*method*/).and.callFake(/*function*/);
 ```
 <hr>
 📍Integration test = tests many units/pieces of code working together
 
+We can test not only one function, also whole page or some unit of codes.
+
+<hr>
+
+📍Hooks = lets us run some code for each test
+
+We can share some code between different tests:
+```javascript
+beforeEach(/*function*/);   //this code will run before each one of our tests
+```
