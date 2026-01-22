@@ -81,4 +81,7 @@ We can test not only one function, also whole page or some unit of codes.
 We can share some code between different tests:
 ```javascript
 beforeEach(/*function*/);   //this code will run before each one of our tests
+afterEach(/*function*/);  //runs code after each test
+beforeAll();  //runs code before all tests
+afterAll();  //runs code after all tests
 ```
