@@ -41,6 +41,7 @@ expect(/*object1*/).toEqual(/*object2*/);  //checks if two objects are equal
 expect(/*object1*/).not.toEqual(/*object2*/);  //checks if two objects are NOT equal
 expect(/*object*/).toHaveBeenCalledTimes(/*number*/);  //checks how many times the object was called in the code above. It works only if the object was mocked with spyOn()
 expect(/*object*/).toContain(/*string*/);   //checks if the object contains the string
+expect(/*object*/).toHaveBeenCalledWith(/*value*/);   //checks what values a mocked method (after spyOn()) recieved.
 ```
 ⚪Methods:
 ```javascript
