@@ -36,9 +36,15 @@ it(/*description*/, /*function*/);
 ```javascript
 expect(/*object*/);
 
-//Methods:
+//Property and Methods:
 expect(/*object1*/).toEqual(/*object2*/);  //checks if two objects are equal
-expect(/*object*/).toHaveBeenCalledTimes(/*number*/);  //checks how many times the object was called in the code above. It works only if the object was mocked with spyOn()  
+expect(/*object1*/).not.toEqual(/*object2*/);  //checks if two objects are NOT equal
+expect(/*object*/).toHaveBeenCalledTimes(/*number*/);  //checks how many times the object was called in the code above. It works only if the object was mocked with spyOn()
+expect(/*object*/).toContain(/*string*/);   //checks if the object contains the string
+```
+⚪Methods:
+```javascript
+document.querySelector('..').click();  //clicks the element
 ```
 
 For example:
@@ -63,3 +69,6 @@ spyOn(/*object we want to mock*/, /*method we want to mock*/);
 //Property and methods:
 spyOn(/*object*/, *method*/).and.callFake(/*function*/);
 ```
+<hr>
+📍Integration test = tests many units/pieces of code working together
+
