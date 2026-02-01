@@ -13,3 +13,24 @@ const cart = {
   }
 };
 ```
+Shorthand Method Syntax:
+```javascript
+loadFromStorage() {    
+    /*code*/
+}
+//instead of
+loadFromStorage: function() {    
+    /*code*/
+  }
+```
+✔️'This' feature:
+```javascript
+const cart = {
+  cartItems: undefined,            
+
+  loadFromStorage() {    
+    this.cartItems = JSON.parse(localStorage.getItem('cart'));
+  }
+};
+//so that if we change our object name, our code works
+```
