@@ -34,3 +34,16 @@ const cart = {
 };
 //so that if we change our object name, our code works
 ```
+
+✔️Function to create multiple objects:
+```javascript
+function Cart() {   //using PascalCase
+  const cart = {    //creating object 
+    /*code*/
+  };
+
+  return cart;
+}
+
+const cart = Cart();
+```
