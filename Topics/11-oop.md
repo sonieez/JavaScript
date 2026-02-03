@@ -1,4 +1,4 @@
-📍Object-Oriented Programming - another way to write our code
+📍Object-Oriented Programming (another way to write our code)
 
 ✔️Organizing our code into objects
 
@@ -48,7 +48,7 @@ function Cart() {   //using PascalCase
 const cart = Cart();
 ```
 
-📍Class - object generator
+📍Class (object generator)
 
 ```javascript
 class Cart {
@@ -67,3 +67,22 @@ To generate an object from class:
 ```javascript
 const objectName = new className();
 ```
+✔️Each object created from class is called - Instance. To check whether an instance belongs to the class :
+```javascript
+objectName instanceof className;    
+```
+
+✔️Constructor - lets us run setup code
+```javascript
+constructor(/*parameter*/) {
+  /*setup code*/
+}
+
+//for example:
+
+constructor(localStorageKey) {
+  this.localStorageKey = localStorageKey;
+  this.loadFromStorage();
+}
+```
+❗We shouldn't return anything in constructor method
