@@ -86,3 +86,17 @@ constructor(localStorageKey) {
 }
 ```
 ❗We shouldn't return anything in constructor method
+
+✔️Private properties and methods:
+
+```javascript
+class Name {
+  property1;  //public property - can be accessed outside the class
+  #property2;  //private property - only can be accessed inside the class
+
+  #function() {   //private method
+    /*code*/
+  }
+}
+  
+```
