@@ -47,3 +47,23 @@ function Cart() {   //using PascalCase
 
 const cart = Cart();
 ```
+
+📍Class - object generator
+
+```javascript
+class Cart {
+  cartItems = undefined;   //property
+
+  loadFromStorage() {    //method
+    /*code*/
+  }
+  //no semicolon after methods (only after property)
+  saveToStorage() {
+    localStorage.setItem(localStorageKey, JSON.stringify(this.cartItems));
+  }
+}
+```
+To generate an object from class:
+```javascript
+const objectName = new className();
+```
