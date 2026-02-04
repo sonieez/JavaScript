@@ -34,6 +34,34 @@ const cart = {
 };
 //so that if we change our object name, our code works
 ```
+❗Inside a method, 'this' points to outer object:
+```javascript
+const object = {
+  method: () => {
+    console.log(this);   //object
+  }
+};
+```
+❗Inside a function, 'this' = `undefined`. But we can change it:
+```javascript
+function logThis() {
+  console.log(this);
+}
+logThis();     //undefined
+logThis.call('hello');     //hello
+```
+❗Arrow functions do not change the value of 'this':
+```javascript
+const object3 = {
+  method: () => {
+    console.log(this);     //object
+
+    [1,2,3].forEach(() => {
+      console.log(this);    //object
+    });
+  }
+};
+```
 
 ✔️Function to create multiple objects:
 ```javascript
@@ -47,6 +75,7 @@ function Cart() {   //using PascalCase
 
 const cart = Cart();
 ```
+<hr>
 
 📍Class (object generator)
 
@@ -100,6 +129,7 @@ class Name {
 }
  
 ```
+<hr>
 
 📍Inheritance (lets us reuse code between classes)
 
@@ -120,4 +150,14 @@ class childClass extends parentClass {
     super(/*parameter*/); //gets all information of constructor from Parent class
   }
 }
+```
+
+<hr>
+📍Built-in Classes (classes provided by the language)
+
+✔️Date() --> generates an object that represents the current date
+```javascript
+const date = new Date();     //current date and time
+
+date.toLocaleTimeString();   //gives the current time(h:m:s)
 ```
