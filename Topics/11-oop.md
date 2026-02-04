@@ -98,5 +98,26 @@ class Name {
     /*code*/
   }
 }
-  
+ 
+```
+
+📍Inheritance (lets us reuse code between classes)
+
+✔️We use it to get all the property and methods from the Parent class for Child class:
+```javascript
+class childClass extends parentClass {
+  /*code*/
+}
+```
+✔️Child class is a more specific type of Parent class.
+
+✔️Calling constructor of Parent class:
+```javascript
+class childClass extends parentClass {
+  /*code*/
+
+  constructor(/*parameter*/) {
+    super(/*parameter*/); //gets all information of constructor from Parent class
+  }
+}
 ```
