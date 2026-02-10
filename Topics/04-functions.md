@@ -85,3 +85,21 @@ const oneLine = () => {
 
 const oneLine = () =>  2 + 3; 
 ```
+
+📍Callback - a function to run in the future
+
+For example:
+```javascript
+function function1(fun) {
+  /*code*/
+}
+
+function function2() {
+  /*code*/
+}
+```
+To run `function2` after `function1` is finished:
+```javascript
+function1(function2);
+```
+✔️We can use this like `function1` - our http request and `function2` - some code we need to run after getting response.
