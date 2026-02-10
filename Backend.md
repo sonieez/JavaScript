@@ -76,3 +76,59 @@ The backend can response with different types of data:
 
 <h3>API</h3>
 Application Programming Interface - ways to interact with a backend
+
+<h3>Promises</h3>
+
+✔️Better way to handle asynchronous code (similar to `done()` function)
+
+✔️Let us wait for some code to finish, before going to the next step
+
+✔️`Promise()` is a built-in class:
+```javascript
+new Promise(/*function*/);
+```
+✔️It runs this inner function immediately.
+
+✔️`resolve()` function lets us control when to go to the next step:
+
+```javascript
+new Promise((resolve) => {
+  function1(() => {      //callback function
+    resolve();    //waits for function1 to end, then continues to the next step
+  });
+}).then(() => {
+  /*next step code*/
+});
+```
+❗We use Promises, because multiple callbacks cause a lot of nesting:
+```javascript
+new Promise((resolve) => {
+  function1(() => {
+    resolve();
+  });
+}).then(() => {
+  return new Promise((resolve) => {
+    function2(() => {
+      resolve();
+    });
+  });
+}).then(() => {
+  /*code*/
+});
+```
+✔️We can give a value to `resolve`:
+```javascript
+new Promise((resolve) => {
+  function1(() => {
+    resolve('value1');
+  });
+
+}).then((value) => {
+  return new Promise((resolve) => {
+    function2(() => {
+      resolve();
+    });
+  });
+
+}
+```
