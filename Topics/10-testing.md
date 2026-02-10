@@ -86,3 +86,18 @@ afterEach(/*function*/);  //runs code after each test
 beforeAll();  //runs code before all tests
 afterAll();  //runs code after all tests
 ```
+<hr>
+
+📍Function that waits for some code to finish - `done()`:
+```javascript
+beforeAll((done) => {
+  function1(() => {     //callback function
+    done();
+  )};      
+});
+```
+✔️Will run the code when `function1` finished.
+
+✔️Lets us control when to go to the next step.
+
+✔️We can use `done` inside the `beforeEach()` and `it()` as well
