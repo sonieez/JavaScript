@@ -85,6 +85,7 @@ const oneLine = () => {
 
 const oneLine = () =>  2 + 3; 
 ```
+<hr>
 
 📍Callback - a function to run in the future
 
@@ -102,4 +103,16 @@ To run `function2` after `function1` is finished:
 ```javascript
 function1(function2);
 ```
+✔️Here `function2` is callback, because we use it as parameter to run in the future.
+
 ✔️We can use this like `function1` - our http request and `function2` - some code we need to run after getting response.
+
+✔️Callback can be any function - arrow or ordinary function:
+```javascript
+function1(() => {
+  function2();
+  function3();
+  function4();
+  /*code*/
+});
+```
