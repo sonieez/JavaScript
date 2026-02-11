@@ -123,7 +123,7 @@ new Promise((resolve) => {
     resolve('value1');
   });
 
-}).then((value) => {
+}).then((value) => {     //value1 is saved in this parameter
   return new Promise((resolve) => {
     function2(() => {
       resolve();
@@ -131,4 +131,32 @@ new Promise((resolve) => {
   });
 
 }
+```
+<hr>
+
+📍Running multiple promises at the same time:
+```javascript
+Promise.all();
+```
+✔️It waits for all of them to finish
+
+For example:
+```javascript
+Promise.all([
+  new Promise((resolve) => {
+    function1(() => {
+      resolve('value1');
+    });
+  }),
+  new Promise((resolve) => {
+    function2(() => {
+      resolve('value2');
+    });
+  })
+
+]).then((values) => {    //value1 and value2 are saved in this parameter
+  /*code*/
+});
+
+//running function1 and function2 at the same time
 ```
