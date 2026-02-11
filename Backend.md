@@ -132,7 +132,6 @@ new Promise((resolve) => {
 
 }
 ```
-<hr>
 
 📍Running multiple promises at the same time:
 ```javascript
@@ -160,3 +159,29 @@ Promise.all([
 
 //running function1 and function2 at the same time
 ```
+
+<hr>
+
+<h3>Fetch()</h3>
+better way to make HTTP requests.
+
+✔️`XMLHttpRequest()` uses Callback, `fetch()` uses Promises.
+```javascript
+function function1() {
+  fetch(/*url*/).then((response) => {  //response is saved in the parameter
+    response.json();   //to get the data attached to the response
+  });
+}
+```
+✔️`response.json()` returns a Promise, so it is asynchronous (we need to wait for it to finish)
+
+```javascript
+function function1() {
+  fetch(/*url*/).then((response) => {
+    return response.json();
+  }).then((data) => {      //response.json() is saved in data parameter
+    /*code*/
+  });
+}
+```
+✔️Data is in array format.
