@@ -18,9 +18,9 @@ Parameters:
   <li>Types of requests:
     <ul>
       <li>GET - get some information from the backend</li>
-      <li>POST</li>
-      <li>PUT</li>
-      <li>DELETE</li>
+      <li>POST - create something (lets us send data to the backend)</li>
+      <li>PUT - update something</li>
+      <li>DELETE - delete something</li>
     </ul>
   </li>
 
@@ -163,6 +163,7 @@ Promise.all([
 <hr>
 
 <h3>Fetch()</h3>
+
 better way to make HTTP requests.
 
 ✔️`XMLHttpRequest()` uses Callback, `fetch()` uses Promises.
@@ -185,3 +186,132 @@ function function1() {
 }
 ```
 ✔️Data is in array format.
+
+✔️Sending data to the backend:
+```javascript
+fetch(/*url*/, {
+  method: 'POST',
+  headers: {           //giving more information about data
+    'Content-Type': 'application/json'      //data will be sent in json format
+  },
+  body: JSON.stringify({       //contains actual data (in json format) 
+    object: object1
+  })
+});
+
+const data = response.json();
+```
+<hr>
+
+<h3>Async Await</h3>
+
+even better way to handle asynchronous code.
+
+✔️Async await is a shortcut for promises.
+
+✔️`async` makes a function return a promise:
+```javascript
+async function function1()  {
+  /*code*/
+}
+//because function1 returns a promise, we can write next code like this:
+function1().then(() => {
+  /*next step code*/
+});
+//it will run function1 and create the next code with it
+```
+The value returned in the first function, will be saved in the parameter of the next one:
+```javascript
+async function function1() {
+  /*code*/
+  return 'value1';
+}
+function1().then((value) => {    //value1 is saved in value parameter
+  /*next step code*/
+});
+```
+✔️`await` lets us wait for a promise to finish, before going to the next line:
+```javascript
+//instead of creating new Promise().then() like we write
+await function2();
+```
+It lets us write asynchronous code like normal code.
+
+✔️The value of `resolve` will be returned to `await` promise, so we can save it to a variable:
+```javascript
+const value = await new Promise((resolve) => {
+  loadCart(() => {
+    resolve('value2');    //value=value2
+  });
+});
+```
+
+❗We can only use `await`, when we're inside of the `async` function.
+<hr>
+
+<h3>Error Handling</h3>
+
+📍Handling unexpected errors:
+
+When we're sending HTTP requests, we can get unexpected errors.
+
+✔️In Callbacks, we set up a separate callback just for errors:
+```javascript
+//we add to the function:
+xhr.addEventListener('error', (error) => {   //error info saved in this parameter
+  /*error handling code*/
+});
+```
+✔️In Promises, we use `catch()` method:
+```javascript
+.catch((error) => {    //error info saved in this parameter
+  /*error handling code*/
+});
+```
+✔️In Async, we use `try`/`catch`:
+```javascript
+try {
+  await function1();
+  /*code that can cause an error/*
+} catch(error) {     //error info saved in this parameter
+  /*error handling code*/
+}
+```
+❗`try`/`catch` is used not only with async await, also with synchronous (normal) code.
+
+❗Whenever we get error, it will skip the rest of the code.
+
+📍Error creating:
+
+We can manually create an error.
+
+✔️Inside the Async:
+```javascript
+try {
+  throw 'error1';     //because we have an error, code after this will be skipped
+  /*code*/
+} catch(error) {     //error1 is saved into this parameter
+  /*error handling code*/
+}
+```
+✔️Inside a Promise:
+
+1️⃣th way:
+```javascript
+const value = await new Promise((resolve) => {
+  throw 'error2';
+  loadCart(() => {
+    resolve();    
+  });
+});
+```
+2️⃣nd way - if we need to create an error in the future:
+```javascript
+const value = await new Promise((resolve, reject) => {
+  loadCart(() => {
+    reject('error3');
+    resolve();    
+  });
+});
+```
+`reject()` is a function. It lets us create an error in the future.
