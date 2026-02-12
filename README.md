@@ -156,3 +156,21 @@ Split our code into 3 parts:
 ✔️MVC is a design pattern.
 
 <hr>
+
+📍Changing URL:
+```javascript
+window.location.href = /*url*/;
+```
+<hr>
+
+📍URL parameters:
+
+✔️Lets us save data directly in the URL.
+
+✔️Adding URL parameter - adding `?` to the url.
+
+✔️Parameter is *property-value* pair. For example:
+```javascript
+?dataId=123
+//dataId: 123 --> like an object
+```
